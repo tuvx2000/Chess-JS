@@ -1,0 +1,363 @@
+<html>
+<head>
+
+
+<link rel="icon" href="q.png">
+<link rel="stylesheet" type="text/css" href="BoardvsSpire.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=brick-sign">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+
+<script src="Waytoplay.js">
+</script>
+
+</head>
+	
+<body > 
+<div id="unveil" >
+<div id="loading">
+	Loading<span id="cl">.</span><span id="gi">.</span><span id="the">.</span>
+</div>
+</div>
+
+
+
+<div id="loser">
+	U Suck! U're Loser!!
+</div>
+	<div id="winner">  
+    	<div> CHOICE TO UPDATE YOUR CHESS!!!</div>
+    	<button onClick="choice3b('1.png','b111')"> <img src="1.png"> </button>
+        <button onClick="choice3b('2.png','b221')"> <img src="2.png"> </button>
+        <button onClick="choice3b('3.png','b331')"> <img src="3.png"> </button>
+        <button onClick="choice3b('p.png','b441')"> <img src="p.png"> </button>
+    </div>
+  </div>
+      <div id="winer">  
+          <div> CHOICE TO UPDATE YOUR CHESS!!!</div>
+          <button onClick="choice3a('a.png','a111')"> <img src="a.png"> </button>
+          <button onClick="choice3a('b.png','a221')"> <img src="b.png"> </button>
+          <button onClick="choice3a('c.png','a331')"> <img src="c.png"> </button>
+          <button onClick="choice3a('m.png','a441')"> <img src="m.png"> </button>
+      </div>    
+    
+    
+    
+    
+
+    <img src="net1.png" class="net">
+    <div class="spider">
+    
+        <div class="spiderweb"></div>
+                <span class="tooltiptext" > Let's Play ^^!</span>
+				<span class="tooltiptext" > Go go go!</span>
+				<span id="mf" class="tooltiptext" > Mother Fucker!</span>
+
+        <div class="body">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+        </div>
+        <div class="legs left">
+            <div class="leg"></div>
+            <div class="leg"></div>
+            <div class="leg"></div>
+        </div>
+        <div class="legs right">
+            <div class="leg"></div>
+            <div class="leg"></div>
+            <div class="leg"></div>
+        </div>
+    </div>
+	
+
+<div id="back">
+<div id="bord">
+<table id="table">
+<tr class="khong">	
+	 <td onMouseDown="first(id)"  id="00" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+	   <img src="a.png" draggable="true" ondragstart="drag(event)"   id = "a11" 
+	></td>
+     <td onMouseDown="first(id)"  id="01" ondrop="drop(event)" ondragover="allowDrop(event)">
+       <img src="b.png" draggable="true" ondragstart="drag(event)"   id = "a22"
+    ></td>
+     <td onMouseDown="first(id)"  id="02" ondrop="drop(event)" ondragover="allowDrop(event)">
+       <img src="c.png" draggable="true" ondragstart="drag(event)"   id = "a33"
+    ></td>
+     <td onMouseDown="first(id)"  id="03" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="m.png" draggable="true" ondragstart="drag(event)"   id = "a44"
+    ></td>
+     <td onMouseDown="first(id)"  id="04" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="n.png" draggable="true" ondragstart="drag(event)"   id = "a55"
+    ></td>
+     <td onMouseDown="first(id)"  id="05" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="c.png" draggable="true" ondragstart="drag(event)"   id = "a66"
+    ></td>
+     <td onMouseDown="first(id)"  id="06" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="b.png" draggable="true" ondragstart="drag(event)"   id = "a77"
+    ></td>
+     <td onMouseDown="first(id)"  id="07" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="a.png" draggable="true" ondragstart="drag(event)"   id = "a88"
+    ></td>
+</tr>
+
+<tr class="mot">
+	 <td onMouseDown="first(id)"  id="10" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="x.png" draggable="true" ondragstart="drag(event)"   id = "a10"
+    ></td>
+     <td onMouseDown="first(id)"  id="11" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="x.png" draggable="true" ondragstart="drag(event)"   id = "a20"
+    ></td>
+     <td onMouseDown="first(id)"  id="12" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="x.png" draggable="true" ondragstart="drag(event)"   id = "a30"
+    ></td>
+     <td onMouseDown="first(id)"  id="13" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="x.png" draggable="true" ondragstart="drag(event)"   id = "a40"
+    ></td>
+     <td onMouseDown="first(id)"  id="14" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="x.png" draggable="true" ondragstart="drag(event)"   id = "a50"
+    ></td>
+     <td onMouseDown="first(id)"  id="15" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="x.png" draggable="true" ondragstart="drag(event)"   id = "a60"
+    ></td>
+     <td onMouseDown="first(id)"  id="16" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="x.png" draggable="true" ondragstart="drag(event)"   id = "a70"
+    ></td>
+     <td onMouseDown="first(id)"  id="17" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="x.png" draggable="true" ondragstart="drag(event)"   id = "a80"
+    ></td>
+</tr>
+
+<tr class="hai">
+	 <td onMouseDown="first(id)"  id="20" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </td>
+     <td onMouseDown="first(id)"  id="21" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="22" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+     </td>
+     <td onMouseDown="first(id)"  id="23" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+     </td>
+     <td onMouseDown="first(id)"  id="24" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="25" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </td>
+     <td onMouseDown="first(id)"  id="26" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+     </td>
+     <td onMouseDown="first(id)"  id="27" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+     </td>
+</tr>
+
+<tr class="ba">
+	 <td onMouseDown="first(id)"  id="30" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="31" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="32" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="33" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="34" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="35" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="36" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="37" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+</tr>
+<tr class="bon">
+	 <td onMouseDown="first(id)"  id="40" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="41" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="42" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="43" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="44" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="45" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="46" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="47" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+</tr>
+<tr class="nam">
+	 <td onMouseDown="first(id)"  id="50" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="51" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="52" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="53" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="54" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="55" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="56" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+     <td onMouseDown="first(id)"  id="57" ondrop="drop(event)" ondragover="allowDrop(event)">  
+     </td>
+</tr>
+<tr class="sau">
+	 <td onMouseDown="first(id)"  id="60" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="y.png" draggable="true" ondragstart="drag(event)"   id = "b10"
+    ></td>
+     <td onMouseDown="first(id)"  id="61" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="y.png" draggable="true" ondragstart="drag(event)"   id = "b20"
+    ></td>
+     <td onMouseDown="first(id)"  id="62" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="y.png" draggable="true" ondragstart="drag(event)"   id = "b30"
+    ></td>
+     <td onMouseDown="first(id)"  id="63" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="y.png" draggable="true" ondragstart="drag(event)"   id = "b40"
+    ></td>
+     <td onMouseDown="first(id)"  id="64" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="y.png" draggable="true" ondragstart="drag(event)"   id = "b50"
+    ></td>
+     <td onMouseDown="first(id)"  id="65" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="y.png" draggable="true" ondragstart="drag(event)"   id = "b60"
+    ></td>
+     <td onMouseDown="first(id)"  id="66" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="y.png" draggable="true" ondragstart="drag(event)"   id = "b70"
+     ></td>
+     <td onMouseDown="first(id)"  id="67" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="y.png" draggable="true" ondragstart="drag(event)"   id = "b80"
+    ></td>
+</tr>
+<tr class="bay">
+	 <td onMouseDown="first(id)"  id="70" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="1.png" draggable="true" ondragstart="drag(event)"   id = "b11"
+    ></td>
+     <td onMouseDown="first(id)"  id="71" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="2.png" draggable="true" ondragstart="drag(event)"   id = "b22"
+    ></td>
+     <td onMouseDown="first(id)"  id="72" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="3.png" draggable="true" ondragstart="drag(event)"   id = "b33"
+    ></td>
+     <td onMouseDown="first(id)"  id="73" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="p.png" draggable="true" ondragstart="drag(event)"   id = "b44"
+    ></td>
+     <td onMouseDown="first(id)"  id="74" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="q.png" draggable="true" ondragstart="drag(event)"   id = "b55"
+    ></td>
+     <td onMouseDown="first(id)"  id="75" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="3.png" draggable="true" ondragstart="drag(event)"   id = "b66"
+    ></td>
+     <td onMouseDown="first(id)"  id="76" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="2.png" draggable="true" ondragstart="drag(event)"   id = "b77"
+    ></td>
+     <td onMouseDown="first(id)"  id="77" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+       <img src="1.png" draggable="true" ondragstart="drag(event)"   id = "b88"
+    ></td>
+</tr>
+</table>
+</div>
+
+	<div >     
+    	<img  id="package" src="mainground.jpg"  >
+        <button class="bt1" id="package1" onClick="goagain();playbutton();soundground();">  Play  </button>
+    </div>
+
+
+
+
+<div id="dm">
+<button class="bt1" id="button1" onClick="clickk();Myfunction();"  style="background:#1B1464;color:#fff200;" > <span>Go Back </span></button>
+<button class="bt1" onClick="goagain();Myfunction1();" style="background:#34ace0;color:#ffda79"><span> NewGame </span></button>
+<button class="bt1" onClick="clickk();shutup()" > <span>Sound  </span></button>
+<button class="bt1" onClick="clickk();playbutton();" > <span> Backout </span> </button>
+<button class="bt1" onClick="clickk();hidespider()" > <span>Spider </span> </button>
+</div>
+
+
+	
+
+
+
+
+
+
+
+<audio id="wth" ><source src="Drop.mp3" type="audio/mpeg"></audio>
+<audio autoplay="autoplay" id="video" loop> <source src="Backgroundmusic.mp3" type="audio/mpeg"> </audio>
+<audio id="goagain" ><source src="goagain.mp3" type="audio/mpeg"></audio>
+<audio id="clickk" ><source src="click.mp3" type="audio/mpeg"></audio>
+<audio id="losersound" ><source src="Losersound.mp3" type="audio/mpeg"></audio>
+
+
+
+
+</body>
+<script>
+var xsipder=0;
+var xplay = 0;
+			
+function endgame()
+{
+	document.getElementById('mf').style.display="block";
+	document.getElementById('loser').style.display="block";
+	document.getElementById('losersound').play();	
+}
+function playbutton()
+{
+	if (xplay%2 == 0)
+	{
+		document.getElementById('package1').style.top= "-500px";
+		document.getElementById('package').style.top= "-1000px";
+	}
+	else
+	{
+		document.getElementById('package1').style.top= "210px";
+		document.getElementById('package').style.top= "-3%";		
+	}
+	xplay++;
+}
+
+
+
+
+function clickk()
+{
+		document.getElementById('clickk').play();	
+
+}
+function goagain()
+{
+		document.getElementById('goagain').play();
+	
+
+}
+function soundground()
+{
+
+		document.getElementById('video').play();
+}
+	var shutu = 0;
+function shutup()
+{
+	if(shutu %2 == 0){
+		document.getElementById('video').pause();
+	}
+	else{
+		document.getElementById('video').play();
+	};
+				shutu++;
+
+}
+function hidespider()
+{
+	if(xsipder %2 == 0)
+	{
+		document.getElementsByClassName("spider")[0].style.top = "-500px";
+		document.getElementsByClassName("net")[0].style.top = "-500px";
+	}
+	else
+	{
+		document.getElementsByClassName("spider")[0].style.top = "0px";
+		document.getElementsByClassName("net")[0].style.top = "20%";
+	}
+	xsipder ++;
+}
+</script>
+</html>
